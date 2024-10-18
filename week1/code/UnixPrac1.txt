@@ -1,6 +1,6 @@
 ##FASTA exercise
 #1#Count how many lines there are in each file
-wc -l *.fasta
+find . -name "*.fasta" -exec wc -l {} \; 
 #2#Print everything starting from the second line for the E.coli genome
 sed '1d' E.coli.fasta
 #3#Count the sequence length of this genome
