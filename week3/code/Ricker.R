@@ -14,3 +14,4 @@ Ricker <- function(N0=1, r=1, K=10, generations=50)
 }
 
 plot(Ricker(generations=10), type="l")
+
