@@ -3,7 +3,7 @@
 
 This project includes a series of R scripts demonstrating fundamental programming concepts, data wrangling, and visualization techniques. Each script serves a specific purpose and is explained in the sections below.
 
-**Important Note:**
+**Important Note**
 
 To ensure proper execution of the scripts, all files must be located in the directory:
 Documents/CMEECourseWork/week3/code.
