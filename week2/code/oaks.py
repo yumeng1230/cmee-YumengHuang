@@ -1,3 +1,21 @@
+#!/usr/bin/env python3
+
+"""
+This script identifies oak trees from a list of species names and demonstrates 
+the use of `for` loops and list comprehensions to process the data.
+
+Steps:
+1. Define a function `is_an_oak` to check if a species belongs to the oak genus (`Quercus`).
+2. Use `for` loops and list comprehensions to:
+    - Extract oak tree species into a set.
+    - Convert oak tree species names to uppercase.
+
+Input:
+    - A predefined list of species names.
+
+Output:
+    - Sets of oak tree species, printed in their original and uppercase formats.
+"""
 ## Finds just those taxa that are oak trees from a list of species
 
 taxa = [ 'Quercus robur',
@@ -8,6 +26,9 @@ taxa = [ 'Quercus robur',
        ]
 
 def is_an_oak(name):
+    """
+    Determines if a species belongs to the oak genus (`Quercus`).
+    """
     return name.lower().startswith('quercus ')
 
 ##Using for loops

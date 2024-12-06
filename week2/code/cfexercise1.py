@@ -1,5 +1,22 @@
 #!/usr/bin/env python3
 
+"""
+This script demonstrates various mathematical functions, including:
+1. Calculating the square root of a number.
+2. Finding the larger of two numbers.
+3. Returning three values in ascending order.
+4. Calculating the factorial of a number using different approaches:
+   - For loop
+   - Recursion
+   - While loop
+
+Author:
+    Yumeng Huang (yh4724@ic.ac.uk)
+
+Version:
+    0.01
+"""
+
 _author_ = 'Yumeng Huang (yh4724@ic.ac.uk)'
 _version_ = '0.01'
 
@@ -7,16 +24,25 @@ import sys
 
 # Function to calculate the square root of a number
 def foo_1(x):
+    """
+    Calculates the square root of a number.
+    """
     return x ** 0.5
 
 # Function to return the larger of two values
 def foo_2(x, y):
+    """
+    Returns the larger of two values.
+    """
     if x > y:
         return x
     return y
 
 # Function to return three values in ascending order
 def foo_3(x, y, z):
+    """
+    Returns three values in ascending order.
+    """
     # Ensure x is the smallest
     if x > y:
         tmp = y
@@ -31,6 +57,9 @@ def foo_3(x, y, z):
 
 # Function to calculate the factorial of x using a loop
 def foo_4(x):
+    """
+    Calculates the factorial of a number using a for loop.
+    """
     result = 1
     for i in range(1, x + 1):
         result = result * i
@@ -38,12 +67,19 @@ def foo_4(x):
 
 # Recursive function to calculate the factorial of x
 def foo_5(x):
+    """
+    Calculates the factorial of a number using recursion.
+    """
     if x == 1:
         return 1
     return x * foo_5(x - 1)
      
 # Function to calculate the factorial of x using a while loop (no if statement)
 def foo_6(x):
+    """
+    Calculates the factorial of a number using a while loop.
+    """
+
     facto = 1
     while x >= 1:
         facto = facto * x

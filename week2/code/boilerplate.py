@@ -3,7 +3,6 @@
 """Description of this program or application.
 You can use several lines"""
 
-__appname__ = '[application name here]'
 __author__ = 'Yumeng Huang (yh4724@ic.ac.uk)'
 __version__ = '0.0.1'
 __license__ = "License for this code/program"

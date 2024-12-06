@@ -1,5 +1,19 @@
 #!/usr/bin/env python3
 
+"""
+This script processes a list of taxa (species and their corresponding orders) 
+to create a dictionary (`taxa_dic`) that maps each order name to a set of species 
+belonging to that order. 
+
+The script demonstrates two methods to achieve this:
+1. Using a conventional loop to populate the dictionary.
+2. Using a dictionary comprehension to achieve the same result.
+
+Output:
+    The script prints the resulting dictionary where each order is a key, 
+    and the value is a set of species in that order.
+"""
+
 taxa = [ ('Myotis lucifugus','Chiroptera'),
          ('Gerbillus henleyi','Rodentia',),
          ('Peromyscus crinitus', 'Rodentia'),

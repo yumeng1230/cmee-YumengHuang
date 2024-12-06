@@ -1,5 +1,7 @@
 install.packages("ggplot2")
 library(ggplot2)
+
+#build a function object that will calculate the ellipse (the perdicted bounds of the eigenvalues):
 build_ellipse <- function(hradius, vradius){ # function that returns an ellipse
   npoints = 250
   a <- seq(0, 2 * pi, length = npoints + 1)
@@ -9,19 +11,15 @@ build_ellipse <- function(hradius, vradius){ # function that returns an ellipse
 }
 
 N <- 250 # Assign size of the matrix
-
 M <- matrix(rnorm(N * N), N, N) # Build the matrix
-
 eigvals <- eigen(M)$values # Find the eigenvalues
-
 eigDF <- data.frame("Real" = Re(eigvals), "Imaginary" = Im(eigvals)) # Build a dataframe
-
 my_radius <- sqrt(N) # The radius of the circle is sqrt(N)
-
 ellDF <- build_ellipse(my_radius, my_radius) # Dataframe to plot the ellipse
 
 names(ellDF) <- c("Real", "Imaginary") # rename the columns
 
+#plot
 # plot the eigenvalues
 p <- ggplot(eigDF, aes(x = Real, y = Imaginary))
 p <- p +

@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+This script processes a tuple of bird species data, extracting and printing their 
+Latin names, common names, and mean body masses using both list comprehensions 
+and conventional loops.
+"""
 
 birds = ( ('Passerculus sandwichensis','Savannah sparrow',18.7),
           ('Delichon urbica','House martin',19),

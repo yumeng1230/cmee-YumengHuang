@@ -1,3 +1,4 @@
+#mathematical annotation of an axis as well as within the plot area
 library(ggplot2)
 x <- seq(0, 100, by = 0.1)
 y <- -4. + 0.25 * x +

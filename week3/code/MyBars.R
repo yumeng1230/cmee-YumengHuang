@@ -1,6 +1,8 @@
+#use the ggplot geom text to annotate a plot
 install.packages("ggplot2")
 library(ggplot2)
 
+#Check what the data look like
 a <- read.table("../data/Results.txt", header = TRUE)
 head(a)
 a$ymin <- rep(0, dim(a)[1]) # append a column of zeros
