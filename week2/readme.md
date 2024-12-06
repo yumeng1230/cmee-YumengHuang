@@ -1,15 +1,13 @@
-README
-Description
+
+**Description**
 
 This project includes a series of Python scripts demonstrating fundamental programming concepts
-Important Note:
+
+**Important Note**
 To ensure proper execution of the scripts, all files must be located in the directory:
 Documents/CMEECourseWork/week2/code.
-Scripts
 
-###code
-
-(All programs run in the code path)
+**Scripts**
 
 #align_seqs.py
 
